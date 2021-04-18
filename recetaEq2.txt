@@ -1,0 +1,9 @@
+cortar|ajo|perejil
+mezclar|ajo|perejil|huevo|carne
+salar|sal|mezcla
+mezclarmilanesa|carne|mezcla
+empanar|panr|carnem
+cocinando|milanesa|sarten
+cortaraditivos|lechuga|tomate|cebolla|pepino
+cocinarpan|horno|pan
+armarmilanesa|aditivoscortados|pan|milanesa
