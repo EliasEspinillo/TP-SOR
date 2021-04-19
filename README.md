@@ -54,4 +54,24 @@ Viendo que todo ésto funcionaba, se procedió a exportar los datos a un TXT. Pa
 Para abrir el archivo se usó fopen y para guardar archivos dentro se uso fprintf.
 También se agregó a la función armarMilanesa el hecho de imprimir quién fue el ganador, identificandolo por el número de equipo y guardando éstos mismos datos en el archivo "salida.txt".
 
-Una de las partes más complicadas del trabajo práctico 
+Una de las partes más complicadas del trabajo práctico fue el tener que realizar la lectura de la receta desde un archivo .txt.
+
+Esto se debió a la poca práctica y conocimiento que manejaba al momento de realizar el trabajo práctico sobre C. Al realizar una investigación a través de internet y del libro recomendado para la materia, se pudo realizar la función cargarReceta, trabajando con strtok para poder separar mediante "|" las palabras, para poder identificar las acciones de los ingredientes. 
+
+Se pasó a probar primero con un sólo hilo, para chequear que cargasue correctamente, y luego se pasó a aplicar a todos los hilos. 
+
+En ése momento, nuestro sistema quedó completo. 
+
+![PRUEBA DE ESCRITORIO](PRUEBA DE ESCRITORIO.png)
+
+CONCLUSIÓN
+A modo de conclusión, pude aprender sobre la aplicación de semáforos y su funcionamiento. La aplicación de los mismos no fue lo más dificil del sistema, dado que pude apoyarme en un pseudocodigo y su prueba de campo, sino que lo más dificil fue el poco conocimiento sobre el lenguaje C. Se pudieron aplicar conocimientos anteriores de programación, identificancdo estructuras y métodos de programación comunes, lo cual facilitó, por ejemplo, la programación de los semáforos. 
+Lo que más trabajo llevó fue la función para leer de un archivo, dado quese tuvo que emplear la mayor parte del tiempo de investigación, por las diferencias de sintaxis y aplicaciones especificas que se tenía para poder aplicar al mismo. 
+
+Fuentes:
+https://www.tutorialspoint.com/c_standard_library/c_function_strtok.htm
+https://www.youtube.com/watch?v=faZEhIHdJx8
+https://www.youtube.com/watch?v=YC61729PThw
+https://parzibyte.me/blog/2018/11/13/separar-cadena-delimitadores-c-strtok/
+Presentaciones realizadas en clases
+https://docs.google.com/presentation/d/14JAVhH1onaNw-DWdeDjgFCKWeTI2B2a15u19wIQfzXg/edit#slide=id.p22
