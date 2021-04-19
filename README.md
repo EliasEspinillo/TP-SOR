@@ -10,7 +10,7 @@ En primera instancia, compile y ejecute el template brindado para ver su comport
 Una vez visto ésto, se empezó a realizar un pseudocodigo con los procesos que serían necesarios y los posibles semáforos que se necesitarían, de acuerdo a lo solicitado en el trabajo práctico.
 
 A continuación, adjunto una imagen con el pseudocodigo:
-
+![PSEUDOCODIGO](https://raw.githubusercontent.com/EliasEspinillo/TP-SOR/master/assets/PSEUDOCODIGO.png)
 
 Una vez comprendido, empecé a utilizar la función que dieron de base (cortar) para poder empezar a replicarlo en las demás que tenían que aplicarse en el programa, que son:
 -mezclar
