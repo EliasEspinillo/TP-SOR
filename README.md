@@ -43,9 +43,9 @@ Para ésto, empece a aplicar semaforos mutex, que bloquean el acceso a los recur
 El primer problema que tuve en éste caso, fue de colocación de los semáforos, ya que los mismos debían ser compartidos e inicializados fuera del struct, pero en primera instancia los coloqué dentro del struct de semáforos, no logrando que funcionara correctamente. 
 Una vez buscada la información sobre el funcionamiento de éstos y dónde debían ser inicializados y declarados, se vio el correcto funcionamiento.
 
-Con ésta información, se procedió a agregar 1 hilo más y a hacer funcionar el proceso cocinarPan, haciendolo funcionar con un semáforo inicializado en 2, permitiendo el ingreso de sólo 2 threads. 
+Con ésta información, se procedió a agregar 1 hilo más y a hacer funcionar el proceso *cocinarPan*, haciendolo funcionar con un semáforo inicializado en 2, permitiendo el ingreso de sólo 2 threads. 
 
-Observando que en ésta instancia todo funcionaba correctamente, se procedió a agregar semáforos auxiliares y a probar la función armarMilanesa. De esa forma, a las funciones 
+Observando que en ésta instancia todo funcionaba correctamente, se procedió a agregar semáforos auxiliares y a probar la función *armarMilanesa*. De esa forma, a las funciones 
 
 - *cortarAditivos*
 - *cocinarPan*
@@ -55,13 +55,13 @@ Se les agregó un semáforo que, una vez se encuentren los 3 con valor 1, daría
 
 Se agregó también un mutex que provoca el bloqueo de la función una vez que un proceso entra a *armarMilanesa*, para que haya un sólo ganador. 
 
-Viendo que todo ésto funcionaba, se procedió a exportar los datos a un TXT. Para ésto, se modificó la función dada imprimirAccion, haciendo que cada vez que se generaba una acción, guarde la misma en el archivo "salida.txt". 
-Para abrir el archivo se usó fopen y para guardar archivos dentro se uso fprintf.
-También se agregó a la función armarMilanesa el hecho de imprimir quién fue el ganador, identificandolo por el número de equipo y guardando éstos mismos datos en el archivo **"salida.txt".**
+Viendo que todo ésto funcionaba, se procedió a exportar los datos a un TXT. Para ésto, se modificó la función dada *imprimirAccion*, haciendo que cada vez que se generaba una acción, guarde la misma en el archivo "salida.txt". 
+Para abrir el archivo se usó *fopen* y para guardar archivos dentro se uso *fprintf*.
+También se agregó a la función *armarMilanesa* el hecho de imprimir quién fue el ganador, identificandolo por el número de equipo y guardando éstos mismos datos en el archivo **"salida.txt".**
 
 Una de las partes más complicadas del trabajo práctico fue el tener que realizar la lectura de la receta desde un archivo .txt.
 
-Esto se debió a la poca práctica y conocimiento que manejaba al momento de realizar el trabajo práctico sobre C. Al realizar una investigación a través de internet y del libro recomendado para la materia, se pudo realizar la función cargarReceta, trabajando con strtok para poder separar mediante "|" las palabras, para poder identificar las acciones de los ingredientes. 
+Esto se debió a la poca práctica y conocimiento que manejaba al momento de realizar el trabajo práctico sobre C. Al realizar una investigación a través de internet y del libro recomendado para la materia, se pudo realizar la función *cargarReceta*, trabajando con strtok para poder separar mediante "|" las palabras, para poder identificar las acciones de los ingredientes. 
 
 Se pasó a probar primero con un sólo hilo, para chequear que cargasue correctamente, y luego se pasó a aplicar a todos los hilos. 
 
