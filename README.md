@@ -23,6 +23,7 @@ Una vez realizado, empecé a utilizar la función que dieron de base (cortar) pa
 - *armarMilanesa*
  
 De todas formas, en al principio, sólo se probó con:
+
 - *mezclar*
 - *salar*
 - *mezclar_milanesa*
@@ -35,17 +36,21 @@ Esto conllevó a la creación de sus respectivos semáforos, para poder concaten
 
 Viendo que ésto funcionaba correctamente, comencé a agregar 1 hilo más, probando las funciones que requerían de 1 exclusión mutua, como el caso del salero y de la sarten. 
 Para ésto, empece a aplicar semaforos mutex, que bloquean el acceso a los recursos compartidos, bloquendo la sección critica para que un sólo hilo pueda trabajar sobre la misma, para luego dejarle a los demás. Los primeros mutex aplicados fueron:
+
 - *mutex_salar_auxiliar*
 - *mutex_cocinar*
+
 El primer problema que tuve en éste caso, fue de colocación de los semáforos, ya que los mismos debían ser compartidos e inicializados fuera del struct, pero en primera instancia los coloqué dentro del struct de semáforos, no logrando que funcionara correctamente. 
 Una vez buscada la información sobre el funcionamiento de éstos y dónde debían ser inicializados y declarados, se vio el correcto funcionamiento.
 
 Con ésta información, se procedió a agregar 1 hilo más y a hacer funcionar el proceso cocinarPan, haciendolo funcionar con un semáforo inicializado en 2, permitiendo el ingreso de sólo 2 threads. 
 
 Observando que en ésta instancia todo funcionaba correctamente, se procedió a agregar semáforos auxiliares y a probar la función armarMilanesa. De esa forma, a las funciones 
+
 - *cortarAditivos*
 - *cocinarPan*
 - *cocinar_milanesa*
+
 Se les agregó un semáforo que, una vez se encuentren los 3 con valor 1, daría paso a permitir que se armase la milanesa. 
 
 Se agregó también un mutex que provoca el bloqueo de la función una vez que un proceso entra a *armarMilanesa*, para que haya un sólo ganador. 
