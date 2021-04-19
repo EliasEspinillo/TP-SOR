@@ -1,10 +1,10 @@
 # SOR-Semáforos-1S-2021
-Trabajo Práctico Semáforos primer semestre año 2021
-Alumno : Espinillo Elías
-INTRODUCCIÓN
+##Trabajo Práctico Semáforos primer semestre año 2021
+##Alumno : Espinillo Elías
+###INTRODUCCIÓN
 En éste trabajo, se buscó la resolución de una competencia de cocina en base a la programación, aplicaciones del lenguaje C y utilización de semáforos. Se vieron principalmente la aplicación de éstos ultimos y su aplicación apra poder resolver problemas de recursos compartidos, como en éste caso fue el horno, un salero y una cocina para poder realizar la comida. 
 
-PROCESO DE CREACIÓN DEL SISTEMA
+###PROCESO DE CREACIÓN DEL SISTEMA
 En primera instancia, compile y ejecute el template brindado para ver su comportamiento y la salida que tenía, para poder empezar a ver lo que se podía requerir y ver el funcionamiento de las funciones dadas.
 
 Una vez visto ésto, se empezó a realizar un pseudocodigo con los procesos que serían necesarios y los posibles semáforos que se necesitarían, de acuerdo a lo solicitado en el trabajo práctico.
@@ -40,7 +40,7 @@ Para ésto, empece a aplicar semaforos mutex, que bloquean el acceso a los recur
 El primer problema que tuve en éste caso, fue de colocación de los semáforos, ya que los mismos debían ser compartidos e inicializados fuera del struct, pero en primera instancia los coloqué dentro del struct de semáforos, no logrando que funcionara correctamente. 
 Una vez buscada la información sobre el funcionamiento de éstos y dónde debían ser inicializados y declarados, se vio el correcto funcionamiento.
 
-COn ésta información, se procedió a agregar 1 hilo más y a hacer funcionar el proceso cocinarPan, haciendolo funcionar con un semáforo inicializado en 2, permitiendo el ingreso de sólo 2 threads. 
+Con ésta información, se procedió a agregar 1 hilo más y a hacer funcionar el proceso cocinarPan, haciendolo funcionar con un semáforo inicializado en 2, permitiendo el ingreso de sólo 2 threads. 
 
 Observando que en ésta instancia todo funcionaba correctamente, se procedió a agregar semáforos auxiliares y a probar la función armarMilanesa. De esa forma, a las funciones 
 -cortarAditivos
