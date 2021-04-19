@@ -62,7 +62,7 @@ Se pasó a probar primero con un sólo hilo, para chequear que cargasue correcta
 
 En ése momento, nuestro sistema quedó completo. 
 
-![PRUEBA DE ESCRITORIO](PRUEBA DE ESCRITORIO.png)
+![PRUEBA DE ESCRITORIO](PESCRITORIO.png)
 
 CONCLUSIÓN
 A modo de conclusión, pude aprender sobre la aplicación de semáforos y su funcionamiento. La aplicación de los mismos no fue lo más dificil del sistema, dado que pude apoyarme en un pseudocodigo y su prueba de campo, sino que lo más dificil fue el poco conocimiento sobre el lenguaje C. Se pudieron aplicar conocimientos anteriores de programación, identificancdo estructuras y métodos de programación comunes, lo cual facilitó, por ejemplo, la programación de los semáforos. 
