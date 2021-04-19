@@ -13,14 +13,14 @@ A continuación, adjunto una imagen con el pseudocodigo:
 ![PSEUDOCODIGO](PSEUDOCODIGO.png)
 
 Una vez realizado, empecé a utilizar la función que dieron de base (cortar) para poder empezar a replicarlo en las demás que tenían que aplicarse en el programa, que son:
--mezclar
+-*mezclar
 -salar
 -mezclar_milanesa
 -empanar
 -cocinar_milanesa
 -cortar_aditivos
 -cocinar_pan
--armarMilanesa
+-armarMilanesa*
 
 De todas formas, en al principio, sólo se probó con:
 -mezclar
